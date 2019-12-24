@@ -34,4 +34,3 @@ class SearchableMovieReviewsContainer extends React.Component {
 }
 
 export default SearchableMovieReviewsContainer;
-
