@@ -9,18 +9,18 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 class LatestMovieReviewsContainer extends React.Component {
   constructor() {
     super()
- 
+
     this.state = {
       reviews: []
     };
   }
- 
+
   componentDidMount() {
     fetch(URL)
       .then(response => response.json())
       .then(movieData => this.setState({ reviews: movieData.results }))
   }
- 
+
   render() {
     return (
       <div className = "latest-movie-reviews">
@@ -30,6 +30,5 @@ class LatestMovieReviewsContainer extends React.Component {
     );
   }
 }
- 
-export default LatestMovieReviewsContainer;
 
+export default LatestMovieReviewsContainer;
